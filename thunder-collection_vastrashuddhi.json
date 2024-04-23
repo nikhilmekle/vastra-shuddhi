@@ -1,0 +1,143 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "vastrashuddhi",
+    "collectionId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+    "dateExported": "2024-04-23T03:01:34.979Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "32b96794-342a-46db-b584-df3d5166d2d7",
+            "name": "Authentication",
+            "containerId": "",
+            "created": "2024-04-19T18:20:54.713Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "403a0ee7-09af-46ec-a69d-eb1caed44c5b",
+            "name": "Services",
+            "containerId": "",
+            "created": "2024-04-20T08:27:58.627Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8a3e352f-e07f-47b3-852c-2ae9e302afb8",
+            "colId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+            "containerId": "32b96794-342a-46db-b584-df3d5166d2d7",
+            "name": "create  a new user",
+            "url": "localhost:4000/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-19T18:23:45.119Z",
+            "modified": "2024-04-20T08:01:53.078Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"nitin\",\n \"email\":\"nitin@gmail.com\",\n \"contact\":\"9503123958\",\n \"address\":\"Latur  Dhanegaon\",\n \"password\":\"Nitin@123\"\n \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c9f9d908-509e-4c04-ab59-2d05d3122b6d",
+            "colId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+            "containerId": "32b96794-342a-46db-b584-df3d5166d2d7",
+            "name": "User login using crds",
+            "url": "localhost:4000/api/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-19T19:45:57.982Z",
+            "modified": "2024-04-20T08:03:16.488Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n \"email\":\"nitin@gmail.com\",\n \"password\":\"Nitin@123\"\n \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "982603d9-eec5-4bb5-a2fc-33723f069201",
+            "colId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+            "containerId": "32b96794-342a-46db-b584-df3d5166d2d7",
+            "name": "Get User Data",
+            "url": "localhost:4000/api/auth/getuser",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-19T20:21:38.709Z",
+            "modified": "2024-04-20T08:26:38.540Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjYyMzc2NzFkMDI4MjA5NDNjOWRlNDFmIn0sImlhdCI6MTcxMzYwMDcxM30.-5ZhY2KPjeBm2dTYrXjbspBlCbME88O0UgMFztEein4"
+                }
+            ]
+        },
+        {
+            "_id": "0f52b3f1-8ebc-41f5-b663-9cc56c72b6aa",
+            "colId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+            "containerId": "403a0ee7-09af-46ec-a69d-eb1caed44c5b",
+            "name": "create new service",
+            "url": "localhost:4000/api/serviceRoutes/create",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-04-20T08:44:45.032Z",
+            "modified": "2024-04-20T09:41:04.710Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Iron & fold Service\",\r\n    \"categories\": [\r\n        {\r\n            \"name\": \"Mens Wear\",\r\n            \"items\": [\r\n                {\r\n                    \"name\": \"Trouser\",\r\n                    \"price\": 40\r\n                },\r\n                {\r\n                    \"name\": \"Shirt\",\r\n                    \"price\": 30\r\n                },\r\n                {\r\n                    \"name\": \"Suit (Blazer + Trouser)\",\r\n                    \"price\": 160\r\n                },\r\n                {\r\n                    \"name\": \"Sherwani\",\r\n                    \"price\": 180\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Womens wear\",\r\n            \"items\": [\r\n                {\r\n                    \"name\": \"Saree (Plain Cotton / Plain Silk / Cotton Design)\",\r\n                    \"price\": 70\r\n                },\r\n                {\r\n                    \"name\": \"Kameez / Kaftan / Apron / Tops\",\r\n                    \"price\": 25\r\n                },\r\n                {\r\n                    \"name\": \"Accessories (Scarf / Dupatta / Orna / Muffler)\",\r\n                    \"price\": 40\r\n                },\r\n                {\r\n                    \"name\": \"Long Dress (Borka /Jumpsuit / Arabian Dress)\",\r\n                    \"price\": 45\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Household\",\r\n            \"items\": [\r\n                {\r\n                    \"name\": \"Travel Bag\",\r\n                    \"price\": 95\r\n                },\r\n                {\r\n                    \"name\": \"Blanket\",\r\n                    \"price\": 75\r\n                },\r\n                {\r\n                    \"name\": \"Towel\",\r\n                    \"price\": 45\r\n                },\r\n                {\r\n                    \"name\": \"Table Mat\",\r\n                    \"price\":180\r\n                },\r\n                {\r\n                    \"name\": \"Pillow Case\",\r\n                    \"price\": 35\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "b037866e-49f4-4619-b427-7e796d7547c2",
+            "colId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+            "containerId": "403a0ee7-09af-46ec-a69d-eb1caed44c5b",
+            "name": "get all services",
+            "url": "localhost:4000/api/serviceRoutes/getallservices",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-04-20T09:43:44.102Z",
+            "modified": "2024-04-20T09:52:17.244Z",
+            "headers": []
+        },
+        {
+            "_id": "38882616-60ab-4c1b-a94d-aefbbd5752bc",
+            "colId": "b889fc2f-9696-4296-9b8c-6caddf8579ac",
+            "containerId": "403a0ee7-09af-46ec-a69d-eb1caed44c5b",
+            "name": "update service",
+            "url": "localhost:4000/api/serviceRoutes/updateservice/66238b1280cbf8c05283ac8d",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2024-04-20T09:53:09.681Z",
+            "modified": "2024-04-20T10:20:40.193Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \" Wash & Iron Service\",\r\n    \"categories\": [\r\n        {\r\n            \"name\": \" Mens Wear\",\r\n            \"items\": [\r\n                {\r\n                    \"name\": \" Trouser\",\r\n                    \"price\": 632150\r\n                },\r\n                {\r\n                    \"name\": \" Shirt\",\r\n                    \"price\": 550\r\n                },\r\n                {\r\n                    \"name\": \" Suit (Blazer + Trouser)\",\r\n                    \"price\": 200\r\n                },\r\n                {\r\n                    \"name\": \" Sherwani\",\r\n                    \"price\": 320\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}\r\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "ihmbeHd0UBxCZ-QF19NTYsGUDNa-B8lWzVgIfJvHJhfX6K-yOu0Rcs-fcg9fNfMDRG-Kt3VlNRzZQas1DOk57g"
+}

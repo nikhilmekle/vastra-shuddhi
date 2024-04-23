@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
-
+import { Link } from 'react-router-dom'
 
 export default function Home() {
 	
@@ -12,8 +12,9 @@ export default function Home() {
 					in your doorstep</h2>
 				<br />
 				<span id='vastrashuddhi'>VastraShuddhi</span> <span>is the first Online Laundry Platform for dry cleaning and laundry. Our services combine our expertise and experience acquired over a period of time to provide you with clean laundry in the shortest possible turnaround time.</span><br />
-				<button className='btn-viewServices' >View Services</button>
-
+	
+				<Link to="/services" className='btn-viewServices' style={{textDecoration:'none', }} >View Services</Link>
+				
 			</div>
 
 

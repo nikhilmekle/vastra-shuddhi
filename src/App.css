@@ -272,11 +272,10 @@ a:hover {
 
 .btn-viewServices {
   margin-top: 15px;
-  color: white;
-  background-color: #0082e6;
+  color: #0082e6;
   border: none;
   border-radius: 5px;
-  height: 30px;
+
 }
 
 /* Responsive adjustments */
